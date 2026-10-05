@@ -15,3 +15,6 @@ app.use(express.json({ limit: '100kb' }));
 app.use('/api', routes);
 app.use(notFound);
 app.use(errorHandler);
+
+// OBRIGATÓRIO PARA A VERCEL SERVERLESS
+export default app;
